@@ -2,7 +2,7 @@
 title: "mw-playground"
 ---
 
-This is a Quarto website.
+만후 웹사이트 입니다
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
