@@ -7,8 +7,12 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - game.qmd
       - about.qmd
-
+    right:
+      - icon: github
+        href: "https://github.com/manwho007/mw-playgruond"
+        aria-label: R Playground
 format:
   html:
     theme: cosmo
@@ -16,4 +20,3 @@ format:
     toc: true
 
 editor: visual
-
