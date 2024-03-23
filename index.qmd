@@ -7,5 +7,22 @@ title: "mw-playground"
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
-1 + 1
+# 필요한 패키지 불러오기
+library(ggplot2)
+
+# 정규분포 데이터 생성
+mean <- 0  # 평균
+sd <- 1    # 표준 편차
+data <- rnorm(1000, mean, sd)
+
+# 데이터를 데이터 프레임으로 변환
+df <- data.frame(x = data)
+
+# 그래프 그리기
+ggplot(df, aes(x = x)) +
+  geom_density(fill = "blue", alpha = 0.5) +
+  ggtitle("정규분포 그래프") +
+  xlab("값") +
+  ylab("밀도")
+
 ```

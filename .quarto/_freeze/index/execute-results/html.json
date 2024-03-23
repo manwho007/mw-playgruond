@@ -1,8 +1,10 @@
 {
-  "hash": "b489e9c9fc37f200d289dd3f37cc3e0e",
+  "hash": "c5088f663aaf5157c043061922c57619",
   "result": {
-    "markdown": "---\ntitle: \"mw-playground\"\n---\n\n\n만후 웹사이트 입니다\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"mw-playground\"\n---\n\n\n만후 웹사이트 입니다\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# 필요한 패키지 불러오기\nlibrary(ggplot2)\n\n# 정규분포 데이터 생성\nmean <- 0  # 평균\nsd <- 1    # 표준 편차\ndata <- rnorm(1000, mean, sd)\n\n# 데이터를 데이터 프레임으로 변환\ndf <- data.frame(x = data)\n\n# 그래프 그리기\nggplot(df, aes(x = x)) +\n  geom_density(fill = \"blue\", alpha = 0.5) +\n  ggtitle(\"정규분포 그래프\") +\n  xlab(\"값\") +\n  ylab(\"밀도\")\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
